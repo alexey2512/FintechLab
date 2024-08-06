@@ -16,7 +16,7 @@ public final class DatabaseManager {
 
     private static final String GET_IP_URL = "https://checkip.amazonaws.com/";
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/fintech_lab_translator";
-    private static final String USER = "root";
+    private static final String USER = "univ_user";
     private static final String PASSWORD = "Alexey/Stepurin2512";
 
     private final String ip;
