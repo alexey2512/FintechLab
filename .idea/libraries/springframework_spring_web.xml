@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="springframework.spring.web" type="repository">
+    <properties maven-id="org.springframework:spring-web:5.3.27" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-web-5.3.27.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-5.3.27.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-5.3.27.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-jcl-5.3.27.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/spring-web-5.3.27-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-5.3.27-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-5.3.27-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-jcl-5.3.27-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-web-5.3.27-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-5.3.27-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-5.3.27-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-jcl-5.3.27-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
