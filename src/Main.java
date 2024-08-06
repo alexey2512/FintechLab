@@ -8,6 +8,17 @@ import java.sql.SQLException;
 import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
 
+/**
+ * This is the main file of this app. It can work in 5 modes:
+ * <ol>
+ *  <li>standard, when all inputs and outputs occur via console;</li>
+ *  <li>files, when input of original text and output of translated text occur via files, others via console;</li>
+ *  <li>requests, when you can see the information about all your requests from database</li>
+ *  <li>last, when you can see the information about only your last request</li>
+ *  <li>delete, when you delete information about all your requests from the database</li>
+ * </ol>
+ */
+
 public class Main {
 
     public static void main(String[] args) {

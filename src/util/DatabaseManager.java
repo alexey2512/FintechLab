@@ -5,6 +5,8 @@ import org.springframework.web.client.RestClientException;
 
 import java.sql.*;
 
+import static util.PropertiesReader.*;
+
 /**
  * This class is responsible for working with the database in the app.
  * The functionality allows you to add user requests to the database, print them
@@ -14,13 +16,7 @@ import java.sql.*;
 
 public final class DatabaseManager {
 
-    private static final String GET_IP_URL = "https://checkip.amazonaws.com/";
-    private static final String JDBC_URL = "jdbc:mysql://192.168.43.87:3306/fintech_lab_translator";
-    private static final String USER = "univ_user";
-    private static final String PASSWORD = "Alexey/Stepurin2512";
-
     private final String ip;
-
 
     /**
      * Gets an ip of this computer via amazon source <a href="https://checkip.amazonaws.com/">...</a>

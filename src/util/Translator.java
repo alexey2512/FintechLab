@@ -13,6 +13,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
 
+import static util.PropertiesReader.*;
+
 /**
  * This class implements the only public method - translating text according to
  * words in sets of 10, translated in parallel. Unfortunately, most of the
@@ -25,8 +27,6 @@ import java.util.concurrent.*;
  */
 
 public final class Translator {
-
-    private static final String MEMORY_TRANSLATE_URL = "https://api.mymemory.translated.net/get?q={text}&langpair={fromLang}|{toLang}";
 
     private final String fromLang;
     private final String toLang;
@@ -84,7 +84,7 @@ public final class Translator {
 
     private String translate(String word) {
         ResponseEntity<String> response = restTemplate.getForEntity(
-                MEMORY_TRANSLATE_URL, String.class, word, fromLang, toLang);
+                MEMORY_URL, String.class, word, fromLang, toLang);
         if (response.getStatusCode().is2xxSuccessful()) {
             String responseBody = response.getBody();
             if (responseBody == null) {
